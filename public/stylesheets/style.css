@@ -25,6 +25,12 @@ html,body{
   left: 28px;
   width: 50%;
 }
+.bg-img-gif{
+  position: absolute;
+  top: 2%;
+  left: 68%;
+  width: 18%;
+}
 .pl1-img{
   position: absolute;
   top: 2%;
