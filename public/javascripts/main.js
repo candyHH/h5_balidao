@@ -1,3 +1,14 @@
+
+// 监听下载事件
+$('.open-down-btn').on('click', function() {
+  _hmt.push(['_trackEvent', '120_complex_download', 'click', '0']);
+});
+
+// 监听分享事件
+$('.share-btn').on('click', function() {
+  _hmt.push(['_trackEvent', '120_complex_share', 'click', '0']);
+});
+
 $('.img-btn').on('click',function () {
   var imgId = $(this).attr('index');
   $('.vedio-play').attr('poster','images/tripe_'+imgId+'.jpg');
