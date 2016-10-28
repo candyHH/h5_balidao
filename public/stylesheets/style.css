@@ -122,7 +122,7 @@ html,body{
 }
 .close-btn{
   position: absolute;
-  bottom: 5%;
+  bottom: 9%;
   left: 44%;
   width: 12%;
 }
@@ -139,4 +139,12 @@ html,body{
   width: 94%;
   margin-top: 30%;
   margin-left: 3%;
+}
+p{
+  position: absolute;
+  font-size: 1rem;
+  font-family: '黑体';
+  bottom: 3%;
+  width: 35%;
+  left: 32%;
 }
