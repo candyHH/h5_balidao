@@ -2,19 +2,19 @@ $('.img-btn').on('click',function () {
   var imgId = $(this).attr('index');
   $('.vedio-play').attr('poster','images/tripe_'+imgId+'.jpg');
   if(imgId ==1){
-    $('.vedio-play source').attr('src','http://video.lalocal.cn/video/mp4/201610281233.mp4');
+    $('.vedio-play').attr('src','http://video.lalocal.cn/video/mp4/201610281233.mp4');
   }else if (imgId ==2) {
-    $('.vedio-play source').attr('src','http://video.lalocal.cn/video/mp4/201610281232.mp4');
+    $('.vedio-play').attr('src','http://video.lalocal.cn/video/mp4/201610281232.mp4');
   }else if(imgId ==3){
-    $('.vedio-play source').attr('src','http://video.lalocal.cn/video/mp4/201610281224.mp4');
+    $('.vedio-play').attr('src','http://video.lalocal.cn/video/mp4/201610281224.mp4');
   }else if(imgId == 4){
-    $('.vedio-play source').attr('src','http://video.lalocal.cn/video/mp4/201610281226.mp4');
+    $('.vedio-play').attr('src','http://video.lalocal.cn/video/mp4/201610281226.mp4');
   }else if(imgId == 5){
-    $('.vedio-play source').attr('src','http://video.lalocal.cn/video/mp4/201610281257.mp4');
+    $('.vedio-play').attr('src','http://video.lalocal.cn/video/mp4/201610281257.mp4');
   }else if(imgId == 6){
-    $('.vedio-play source').attr('src','http://video.lalocal.cn/video/mp4/201610281230.mp4');
+    $('.vedio-play').attr('src','http://video.lalocal.cn/video/mp4/201610281230.mp4');
   }else if(imgId == 7){
-    $('.vedio-play source').attr('src','http://video.lalocal.cn/video/mp4/201610281229.mp4');
+    $('.vedio-play').attr('src','http://video.lalocal.cn/video/mp4/201610281229.mp4');
   }
   $('.intro-img').attr('src','images/intro_'+imgId+'.png');
   console.log(imgId);
