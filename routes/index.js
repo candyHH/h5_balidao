@@ -26,7 +26,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/index', function(req, res, next) {
   var isApp = false;
-  if (getUrlParam('DEVICE') == 'ios' || getUrlParam('DEVICE') == 'android') {
+  if (req.query.DEVICE== 'ios' || req.query.DEVICE == 'android') {
     isApp = true;
   }
   var thisUrl = req.url;
