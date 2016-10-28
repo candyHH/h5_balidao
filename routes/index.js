@@ -37,7 +37,7 @@ router.get('/index', function(req, res, next) {
     .end(function(err2, res2) {
       if (res2 !== undefined && res2.ok) {
         res2.body.browserUrl = global.browserURL;
-        res.body.flag = isApp;
+        res2.body.flag = isApp;
         res.render('index',res2.body);
       } else {
         console.error('微信分享api错误。');
