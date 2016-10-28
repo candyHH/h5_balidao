@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>下一站全世界——巴厘岛之旅</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <video controls="controls" autoplay="autoplay">
-      <source src="movie.ogg" type="video/ogg" />
-      <source src="movie.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <div class="container">
+      <img src="images/bg.png" alt="" class="bg-img"/>
+      <img src="images/title.png" alt="" class="title-img"/>
+      <img src="images/pl_1.png" alt="" class="pl1-img img-btn" index="1"/>
+      <img src="images/pl_2.png" alt="" class="pl2-img img-btn" index="2"/>
+      <img src="images/pl_3.png" alt="" class="pl3-img img-btn" index="3"/>
+      <img src="images/pl_4.png" alt="" class="pl4-img img-btn" index="4"/>
+      <img src="images/pl_5.png" alt="" class="pl5-img img-btn" index="5"/>
+      <img src="images/pl_6.png" alt="" class="pl6-img img-btn" index="6"/>
+      <img src="images/pl_7.png" alt="" class="pl7-img img-btn" index="7"/>
+    </div>
+    <div class="show-vedio">
+      <video controls="controls" poster="images/tripe_1.jpg" class="vedio-play">
+        <source src="http://www.runoob.com/try/demo_source/mov_bbb.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="introduce">
+        <img src="images/intro_1.png" alt="" class="intro-img"/>
+        <img src="images/app.png" alt="" class="open-app-btn"/ >
+        <img src="images/down.png" alt="" class="open-down-btn"/ >
+        <img src="images/share.png" alt="" class="share-btn"/ >
+        <img src="images/closeBtn.png" alt="" class="close-btn"/>
+      </div>
+    </div>
+    <div class="share-box">
+      <img src="images/shareTip.png" alt="" class="share-tip"/>
+    </div>
   </body>
+  <script type="text/javascript" src="javascripts/jquery-1.10.1.min.js"></script>
+  <%include include_share.ejs%>
+  <script type="text/javascript">
+   var flag = <%=flag%>;
+   console.log(flag);
+   if(flag == true){
+     $('.open-down-btn').hide();
+   }else{
+     $('.open-app-btn').hide();
+   }
+  </script>
+  <script type="text/javascript" src="javascripts/main.js"></script>
 </html>

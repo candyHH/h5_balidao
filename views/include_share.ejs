@@ -1,0 +1,18 @@
+<script src="javascripts/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+  var shareUrl='<%=browserUrl%>'+'/index';
+  var shareData = {
+    title : '伊一,天悦巴厘岛之旅精彩视频大曝光',
+    desc : '乐可旅行,不一样的巴厘岛之旅,下一站全世界!',
+    imgUrl : 'https://dev.lalocal.cn/wechat/h5balidao/images/share.jpg',
+    link : shareUrl
+  };
+
+  var wxConfig = {
+    appId : '<%=appId%>',
+    timestamp : '<%=timestamp%>',
+    nonceStr : '<%=nonceStr%>',
+    signature : '<%=signature%>'
+  }
+</script>
+<script src="javascripts/base.js"></script>
